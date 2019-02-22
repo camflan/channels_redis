@@ -745,7 +745,7 @@ class RedisChannelLayer(BaseChannelLayer):
         """
         Common function to make the storage key for the group.
         """
-        return ("%s:group:%s" % (self.prefix, group)).encode("utf8")
+        return ("%sgroup:%s" % (self.prefix, group)).encode("utf8")
 
     ### Serialization ###
 
